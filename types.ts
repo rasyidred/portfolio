@@ -44,14 +44,21 @@ export interface Award {
   location: string;
 }
 
+export interface Certification {
+  name: string;
+  issuer: string;
+  year: string;
+  certificateUrl: string;
+}
+
 export interface CVData {
   name: string;
   role: string;
   contact: ContactInfo;
-  interests: string[];
   education: Education[];
   experience: Experience[];
   papers: Paper[];
   skills: SkillCategory[];
   awards: Award[];
+  certifications: Certification[];
 }

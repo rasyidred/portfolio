@@ -10,15 +10,6 @@ export const cvData: CVData = {
     linkedin: "rasyidred",
     location: "Gumi, South Korea"
   },
-  interests: [
-    "Blockchain",
-    "Zero-Knowledge Proof",
-    "Smart Contracts",
-    "Distributed Systems",
-    "Information Security",
-    "Digital Asset Management",
-    "Internet of Things"
-  ],
   education: [
     {
       degree: "Master of Engineering in IT Convergence Engineering",
@@ -138,6 +129,26 @@ export const cvData: CVData = {
     {
       category: "Languages",
       skills: ["English", "Korean", "Indonesian"]
+    }
+  ],
+  certifications: [
+    {
+      name: "Ethereum Blockchain Developer Bootcamp with Solidity",
+      issuer: "Udemy",
+      year: "2021",
+      certificateUrl: "/certificates/Udemy_Solidity_Bootcamp.pdf"
+    },
+    {
+      name: "Cybersecurity Instructure Configuration",
+      issuer: "Palo Alto Networks",
+      year: "2020",
+      certificateUrl: "/certificates/Palo_Alto_Cybersecurity_Infrastructure.pdf"
+    },
+    {
+      name: "Cybersecurity Overview",
+      issuer: "Institute For Information Industry, Taiwan",
+      year: "2020",
+      certificateUrl: "/certificates/III_Cybersecurity_Infrastructure.pdf"
     }
   ],
   papers: [
