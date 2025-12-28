@@ -14,7 +14,11 @@
     
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
+
+    <!-- PDF Generation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+
     <!-- Tailwind Config -->
     <script>
       tailwind.config = {
@@ -170,10 +174,10 @@
                             <i data-lucide="mail" class="w-4 h-4"></i>
                             Contact Me
                         </a>
-                        <a href="#" target="_blank" class="flex items-center justify-center gap-2 bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-slate-700 px-6 py-3 rounded-lg font-medium transition-all">
+                        <button onclick="window.generateCV()" class="flex items-center justify-center gap-2 bg-white dark:bg-slate-800 hover:bg-gray-50 dark:hover:bg-slate-700 text-gray-800 dark:text-gray-200 border border-gray-200 dark:border-slate-700 px-6 py-3 rounded-lg font-medium transition-all cursor-pointer">
                             <i data-lucide="download" class="w-4 h-4"></i>
                             Download CV
-                        </a>
+                        </button>
                     </div>
                     <div class="flex gap-4 justify-center md:justify-start">
                         <a href="https://github.com/rasyidred" target="_blank" rel="noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
@@ -782,6 +786,9 @@
             </div>
         </footer>
     </main>
+
+    <!-- CV Generator Module -->
+    <script type="module" src="./cv-generator.js"></script>
 
     <!-- Interactive Scripts -->
     <script>
