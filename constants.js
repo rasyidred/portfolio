@@ -1,6 +1,5 @@
-import { CVData } from './types';
-
-export const cvData: CVData = {
+// CV Data - converted from TypeScript to JavaScript
+export const cvData = {
   name: "Muhammad Rasyid Redha Ansori",
   role: "Research & Development Engineer",
   contact: {
