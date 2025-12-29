@@ -8,11 +8,11 @@ export const Hero: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-12">
         
         {/* Profile Image / Placeholder */}
-        <div className="flex-shrink-0 relative">
-            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white shadow-xl bg-gray-200">
-             <img 
-               src="https://picsum.photos/400/400" 
-               alt={cvData.name} 
+        <div className="flex-shrink-0 relative group">
+            <div className="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl bg-gray-200 transition-all duration-300 group-hover:border-primary-500 group-hover:shadow-2xl group-hover:shadow-primary-200">
+             <img
+               src="https://picsum.photos/400/400"
+               alt={cvData.name}
                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
              />
             </div>
