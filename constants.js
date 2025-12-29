@@ -2,6 +2,8 @@
 export const cvData = {
   name: "Muhammad Rasyid Redha Ansori",
   role: "Research & Development Engineer",
+  profileImage: "./assets/profile.jpg",
+  specialties: ["Blockchain", "Zero-Knowledge Proof", "Smart Contracts", "Distributed Systems"],
   contact: {
     phone: "(+82) 10-8655-7812",
     email: "rasyid.red@gmail.com",
@@ -157,182 +159,208 @@ export const cvData = {
       year: "2025",
       title: "PureRx: An NFT-Prescription Management for Efficient and Secure Healthcare System",
       publication: "IEEE Transactions on Big Data. 3rd Revision Submitted",
-      status: "Submitted"
+      status: "Submitted",
+      featured: true
     },
     {
       type: "Journal",
       authors: "Haryadi, G.A., Ansori, M.R.R., Lee, J.M., Kim, D.-S.",
       year: "2024",
       title: "Pure Loyalty: Efficient and Secure Framework for NFT Loyalty Programs",
-      publication: "The Journal of Korean Institute of Communications and Information Sciences. 49(7), 983-992"
+      publication: "The Journal of Korean Institute of Communications and Information Sciences. 49(7), 983-992",
+      featured: true
     },
     {
       type: "Journal",
       authors: "Ansori, M. R. R., Allwinnaldo, Alief, R. N., Igboanusi, I. S., Lee, J. M., Kim, D.-S.",
       year: "2023",
       title: "HADES: Hash-Based Audio Copy Detection System for Copyright Protection in Decentralized Music Sharing",
-      publication: "IEEE Transactions on Network and Service Management, 20(3), 2845-2853"
+      publication: "IEEE Transactions on Network and Service Management, 20(3), 2845-2853",
+      featured: true
     },
     {
       type: "Journal",
       authors: "Allwinnaldo, Ansori, M. R. R., Alief, R. N., Lee, J. M., Kim, D. S.",
       year: "2023",
       title: "Efficient Blockchain-Based Energy Auction Platform for Secured Energy Trading on Industrial Applications",
-      publication: "The Journal of Korean Institute of Communications and Information Sciences, 48(7), 885-895"
+      publication: "The Journal of Korean Institute of Communications and Information Sciences, 48(7), 885-895",
+      featured: true
     },
     {
       type: "Journal",
       authors: "Igboanusi, I.S., Allwinnaldo, Alief, R.N., Ansori, M.R.R., Lee, J.-M., Kim, D.-S.",
       year: "2022",
       title: "Smart Auto Mining (SAM) for Industrial IoT Blockchain Network",
-      publication: "IET Communication, 16, 2123–2132"
+      publication: "IET Communication, 16, 2123–2132",
+      featured: true
     },
     {
       type: "Conference",
       authors: "Nwankwo, O. U., Ansori, M. R. R., Kim, D. S.",
       year: "2024",
       title: "Blockchain-Enabled Secured Land Transaction Framework using Smart Contract",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1886-1887"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1886-1887",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Haryadi, G. A., Ansori, M. R. R., Alief, R. N., Lee, J. M., Kim, D. S.",
       year: "2023",
       title: "Analysis on Efficient Batch NFT-Based System for Electronic Manufacturing Supply Chain",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 871-872"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 871-872",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Haryadi, G. A., Ansori, M. R. R., Lee, J. M., Kim, D. S.",
       year: "2023",
       title: "Efficient Voucher Distribution and Non-Transferability in NFT Loyalty Programs",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 858-859"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 858-859",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Ansori, M. R. R., Alief, R. N., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2023",
       title: "Batch Minting-enabled Digital Certificates Based on Soulbound Token for Achievement Verification",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1350-1351"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1350-1351",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Allwinnaldo, Ansori, M. R. R., Alief, R. N., Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2023",
       title: "Advance NFT-Based Digital Certificate for Efficient Exotic Fish Ownership",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1352-1354"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1352-1354",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Igboanusi, I. S., Ansori, M. R. R., Alief, R. N., Allwinnaldo, Lee, J. M., Kim, D. S.",
       year: "2023",
       title: "Saviour Multi-Hashing (SMuHa): A Security Algorithm for Offline Transactions",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 288-289"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 288-289",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Ansori, M. R. R., Alief, R. N., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2023",
       title: "Watermarking-Based Fake Audio NFT Detection in NFT Marketplace",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 487-488"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 487-488",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Allwinnaldo, Alief, R. N., Ansori, M. R. R., Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2023",
       title: "Blockchain-Based Lightweight Fish Auction Marketplace Platform for Traceability Seafood Supply Chain",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 718-720"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 718-720",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Ansori, M. R. R., Alief, R. N., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Non-transferable NFT-Based Digital Certificate for Achievement Verification",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 678-679"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 678-679",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Allwinnaldo, Alief, R. N., Ansori, M. R. R., Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Lightweight Energy Auction Smart Contract for Industrial Application",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 684-687"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 684-687",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Igboanusi, I. S., Alief, R. N., Ansori, M. R. R., Allwinnaldo, Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Pure Voting (PV): An Offline Voting Algorithm",
-      publication: "In 2022 27th Asia Pacific Conference on Communications (APCC), Jeju Island, Republic of Korea, 586-587"
+      publication: "In 2022 27th Asia Pacific Conference on Communications (APCC), Jeju Island, Republic of Korea, 586-587",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Igboanusi, I. S., Allwinnaldo, R. N. Alief, Ansori, M. R. R., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Ethereum Based Storage Aware Mining for Permissioned Blockchain Network",
-      publication: "In 2022 Thirteenth International Conference on Ubiquitous and Future Networks (ICUFN), Barcelona, Spain, 161-166"
+      publication: "In 2022 Thirteenth International Conference on Ubiquitous and Future Networks (ICUFN), Barcelona, Spain, 161-166",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Ansori, M. R. R., Alief, R. N., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Genuine-assurance Scheme for Digital Assets Validation using Blockchain Technology",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1439-1440"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1439-1440",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Allwinnaldo, Alief, R. N., Ansori, M. R. R., Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Smart Contract-Based Solution for Secured Supply Chain Transaction",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1441-1443"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1441-1443",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Alief, R. N., Ansori, M. R. R., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Smart Contract-Based Airline Ticket Reservation System",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1435-1436"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1435-1436",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Igboanusi, I. S., Allwinnaldo, I. S., Alief, R. N., Ansori, M. R. R., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Storage-Aware Mining for Blockchain Network",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1125-1126"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1125-1126",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Ansori, M. R. R., Alief, R. N., Allwinnaldo, Igbonausi, I. S., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Duplicate Audio Data Detection Model Based on IPFS and Blockchain using Smart Contract",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1028-1029"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1028-1029",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Allwinnaldo, Alief, R. N., Ansori, M. R. R., Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Lightweight Project Bidding Smart Contract for Industial Sector on Ethereum Blockchain",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1032-1035"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1032-1035",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Alief, R. N., Ansori, M. R. R., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.",
       year: "2022",
       title: "Smart Contract-Based Payment and Luggage Tracking for Airline Industry",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1024-1025"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 1024-1025",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Ansori, M. R. R., Ajakwe, S. O., Lee, J. M., Kim, D. S.",
       year: "2021",
       title: "A Robust MP3 Compression-Resistant Audio Watermarking Algorithm Based on DWT-SMM",
-      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 393-394"
+      publication: "The Korean Institutes of Communications and Information Sciences (KICS), 393-394",
+      featured: false
     },
     {
       type: "Conference",
       authors: "Allwinnaldo, Budiman, G., Novamizanti, L., Alief, R. N., Ansori, M. R. R.",
       year: "2019",
       title: "QIM-based Audio Watermarking using Polar-based Singular Value in DCT Domain",
-      publication: "International Conference on Information Technology, Information Systems and Electrical Engineering (ICITISEE), 216-221"
+      publication: "International Conference on Information Technology, Information Systems and Electrical Engineering (ICITISEE), 216-221",
+      featured: false
     }
   ]
 };
