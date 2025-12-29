@@ -50,46 +50,48 @@ export const cvData = {
       ],
     },
     {
-      role: "Cryptocurrency Offline Transaction Protocol Researcher",
-      company: "Networked System Lab. (Graduate Research)",
+      role: "Graduate Research",
+      company: "Networked System Lab., Kumoh National Institute of Technology",
       location: "Gumi, S.Korea",
-      period: "Apr. 2022 - Aug. 2023",
-      details: [
-        "Developed and deployed smart contracts facilitating offline-to-offline and offline-to-online transaction synchronization",
-        "Built mobile application prototype demonstrating offline transaction protocol functionality with seamless blockchain integration",
-        "Integrated offline wallet prototype with blockchain networks through mobile app interface for automated data reconciliation",
-        "Conducted performance testing under simulated offline conditions, achieving 98% success rate for transaction validation",
+      period: "Sep. 2021 - Aug. 2023",
+      projects: [
+        {
+          name: "Cryptocurrency Offline Transaction Protocol",
+          period: "Apr. 2022 - Aug. 2023",
+          details: [
+            "Developed and deployed smart contracts facilitating offline-to-offline and offline-to-online transaction synchronization",
+            "Built mobile application prototype demonstrating offline transaction protocol functionality with seamless blockchain integration",
+            "Integrated offline wallet prototype with blockchain networks through mobile app interface for automated data reconciliation",
+            "Conducted performance testing under simulated offline conditions, achieving 98% success rate for transaction validation",
+          ],
+        },
+        {
+          name: "NFT-Based Wine Marketplace (Winex)",
+          period: "Jan. 2022 - Apr. 2022",
+          details: [
+            "Developed NFT-based wine marketplace smart contracts enabling secure product authentication and supply chain tracking",
+            "Performed comprehensive smart contract security audits using Slither static analysis and manual code review",
+          ],
+        },
+        {
+          name: "3D Printing Quality Monitoring System",
+          period: "Sep. 2021 - Dec. 2021",
+          details: [
+            "Built real-time quality monitoring system using machine learning algorithms and IoT sensor integration",
+            "Developed Python-based sensor interface with Raspberry Pi for automated data collection and processing",
+            "Implemented MongoDB database system for real-time sensor data storage and retrieval",
+          ],
+        },
       ],
     },
     {
-      role: "NFT-Based Wine Marketplace (Winex) Developer",
-      company: "Networked System Lab.",
-      location: "Gumi, S.Korea",
-      period: "Jan. 2022 - Apr. 2022",
-      details: [
-        "Developed NFT-based wine marketplace smart contracts enabling secure product authentication and supply chain tracking",
-        "Performed comprehensive smart contract security audits using Slither static analysis and manual code review",
-      ],
-    },
-    {
-      role: "3D Printing Quality Monitoring System Developer",
-      company: "Networked System Lab.",
-      location: "Gumi, S.Korea",
-      period: "Sep. 2021 - Dec. 2021",
-      details: [
-        "Built real-time quality monitoring system using machine learning algorithms and IoT sensor integration",
-        "Developed Python-based sensor interface with Raspberry Pi for automated data collection and processing",
-        "Implemented MongoDB database system for real-time sensor data storage and retrieval",
-      ],
-    },
-    {
-      role: "Audio Watermarking Implementation",
-      company: "Digital Signal Processing Lab. (Undergraduate Research)",
+      role: "Undergraduate Research",
+      company: "Digital Signal Processing Lab., Telkom University",
       location: "Bandung, Indonesia",
       period: "Jan. 2019 - Dec. 2019",
       details: [
-        "Implemented portable audio watermarking system on Raspberry Pi platform for digital file authentication",
-        "Developed and optimized Python-based signal processing algorithms minimizing audio distortion during watermark embedding",
+        "Designed and deployed a portable audio watermarking system on Raspberry Pi for on-device digital file authentication",
+        "Developed and optimized audio watermarking algorithms with PythonProposed and evaluated Python-based audio watermarking algorithms optimized for robustness and computational constraints",
       ],
     },
     {

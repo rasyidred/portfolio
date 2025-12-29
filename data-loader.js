@@ -62,26 +62,66 @@ function populateExperience() {
   const experienceContainer = document.querySelector('#experience .space-y-12');
   if (!experienceContainer) return;
 
-  experienceContainer.innerHTML = cvData.experience.map(exp => `
-    <div class="relative pl-8 md:pl-12">
-      <div class="timeline-dot"></div>
-      <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
-        <h3 class="text-xl font-bold text-gray-900 dark:text-white">${exp.role}</h3>
-        <span class="text-sm font-medium text-primary-500 dark:text-primary-400 whitespace-nowrap mt-1 sm:mt-0 px-3 py-1 bg-primary-50 dark:bg-slate-800 rounded-full">${exp.period}</span>
-      </div>
-      <div class="mb-4">
-        <p class="text-gray-700 dark:text-gray-300 font-semibold text-lg">${exp.company}</p>
-        <p class="text-gray-500 dark:text-gray-400 text-sm">${exp.location}</p>
-      </div>
-      <ul class="space-y-2">
-        ${exp.details.map(detail => `
-          <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2">
-            <span class="text-primary-400 mt-1.5 text-xs">●</span>${detail}
-          </li>
-        `).join('')}
-      </ul>
-    </div>
-  `).join('');
+  experienceContainer.innerHTML = cvData.experience.map(exp => {
+    // Check if this entry has projects (consolidated structure)
+    if (exp.projects && exp.projects.length > 0) {
+      // Render consolidated entry with sub-projects
+      return `
+        <div class="relative pl-8 md:pl-12">
+          <div class="timeline-dot"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white">${exp.role}</h3>
+            <span class="text-sm font-medium text-primary-500 dark:text-primary-400 whitespace-nowrap mt-1 sm:mt-0 px-3 py-1 bg-primary-50 dark:bg-slate-800 rounded-full">${exp.period}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-gray-700 dark:text-gray-300 font-semibold text-lg">${exp.company}</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">${exp.location}</p>
+          </div>
+
+          <!-- Projects sub-sections -->
+          <div class="space-y-6">
+            ${exp.projects.map(project => `
+              <div>
+                <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-3 mb-2">
+                  <h4 class="text-base font-bold text-gray-800 dark:text-gray-200">${project.name}</h4>
+                  <span class="text-xs font-semibold text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-primary-900/30 px-2 py-1 rounded whitespace-nowrap">${project.period}</span>
+                </div>
+                <ul class="space-y-2 ml-0">
+                  ${project.details.map(detail => `
+                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2">
+                      <span class="text-primary-400 mt-1.5 text-xs">●</span>${detail}
+                    </li>
+                  `).join('')}
+                </ul>
+              </div>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    } else {
+      // Render normal entry (existing logic)
+      return `
+        <div class="relative pl-8 md:pl-12">
+          <div class="timeline-dot"></div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white">${exp.role}</h3>
+            <span class="text-sm font-medium text-primary-500 dark:text-primary-400 whitespace-nowrap mt-1 sm:mt-0 px-3 py-1 bg-primary-50 dark:bg-slate-800 rounded-full">${exp.period}</span>
+          </div>
+          <div class="mb-4">
+            <p class="text-gray-700 dark:text-gray-300 font-semibold text-lg">${exp.company}</p>
+            <p class="text-gray-500 dark:text-gray-400 text-sm">${exp.location}</p>
+          </div>
+          <ul class="space-y-2">
+            ${exp.details.map(detail => `
+              <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2">
+                <span class="text-primary-400 mt-1.5 text-xs">●</span>${detail}
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      `;
+    }
+  }).join('');
 }
 
 /**
