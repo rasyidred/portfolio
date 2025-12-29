@@ -2,7 +2,7 @@
 export const cvData = {
   name: "Muhammad Rasyid Redha Ansori",
   role: "Research & Development Engineer",
-  profileImage: "./assets/profile.jpg",
+  profileImage: "./assets/profile.png",
   specialties: [
     "Blockchain",
     "Zero-Knowledge Proof",
