@@ -91,7 +91,7 @@ export const cvData = {
       period: "Jan. 2019 - Dec. 2019",
       details: [
         "Designed and deployed a portable audio watermarking system on Raspberry Pi for on-device digital file authentication",
-        "Developed and optimized audio watermarking algorithms with PythonProposed and evaluated Python-based audio watermarking algorithms optimized for robustness and computational constraints",
+        "Proposed and evaluated Python-based audio watermarking algorithms optimized for robustness and computational constraints",
       ],
     },
     {
