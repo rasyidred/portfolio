@@ -97,12 +97,11 @@
             <div class="flex items-center gap-6">
                 <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">About</a>
-                    <a href="#experience" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Experience</a>
-                    <a href="#education" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Education</a>
-                    <a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Skills</a>
-                    <a href="#publications" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Publications</a>
-                    <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Contact</a>
+                    <a href="#about" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">About</a>
+                    <a href="#experience" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Experience</a>
+                    <a href="#education" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Education</a>
+                    <a href="#skills" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Skills</a>
+                    <a href="#publications" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Publications</a>
                 </nav>
 
                 <!-- Dark Mode Toggle -->
@@ -121,12 +120,11 @@
         <!-- Mobile Nav -->
         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-gray-100 dark:border-slate-800 shadow-lg">
             <nav class="flex flex-col py-4 px-4 space-y-4">
-                <a href="#about" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">About</a>
-                <a href="#experience" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Experience</a>
-                <a href="#education" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Education</a>
-                <a href="#skills" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Skills</a>
-                <a href="#publications" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Publications</a>
-                <a href="#contact" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Contact</a>
+                <a href="#about" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">About</a>
+                <a href="#experience" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Experience</a>
+                <a href="#education" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Education</a>
+                <a href="#skills" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Skills</a>
+                <a href="#publications" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Publications</a>
             </nav>
         </div>
     </header>
@@ -136,12 +134,12 @@
         <section id="about" class="pt-32 pb-16 md:pt-48 md:pb-32 bg-gradient-to-br from-primary-50 via-white to-white dark:from-slate-900 dark:via-slate-900 dark:to-slate-800 transition-colors duration-300">
             <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-12">
                 
-                <!-- Profile Image -->
+                <!-- Profile Image (Populated by data-loader.js) -->
                 <div class="flex-shrink-0 relative group">
                     <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-slate-700 shadow-xl bg-gray-200 dark:bg-slate-800">
                         <img
-                        src="assets/profile.JPG"
-                        alt="Muhammad Rasyid Redha Ansori"
+                        src=""
+                        alt=""
                         class="w-full h-full object-cover transition-all duration-500"
                         />
                     </div>
@@ -150,27 +148,20 @@
                     </div>
                 </div>
 
-                <!-- Info -->
+                <!-- Info (Populated by data-loader.js) -->
                 <div class="flex-1 text-center md:text-left space-y-6">
                     <div>
                         <h2 class="text-primary-600 dark:text-primary-400 font-bold tracking-widest uppercase text-sm mb-2">Portfolio</h2>
-                        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-2">
-                            Muhammad Rasyid Redha Ansori
-                        </h1>
-                        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-light">
-                            Research & Development Engineer
-                        </p>
+                        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight mb-2"></h1>
+                        <p class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-light"></p>
                     </div>
 
                     <div class="flex flex-wrap gap-2 justify-center md:justify-start">
-                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-medium uppercase tracking-wide">Blockchain</span>
-                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-medium uppercase tracking-wide">Zero-Knowledge Proof</span>
-                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-medium uppercase tracking-wide">Smart Contracts</span>
-                        <span class="px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 rounded-full text-xs font-medium uppercase tracking-wide">Distributed Systems</span>
+                        <!-- Specialties populated by data-loader.js -->
                     </div>
 
                     <div class="flex flex-col md:flex-row gap-4 justify-center md:justify-start pt-4">
-                        <a href="mailto:rasyid.red@gmail.com" class="flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg shadow-primary-200 dark:shadow-none">
+                        <a href="mailto:" class="flex items-center justify-center gap-2 bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg shadow-primary-200 dark:shadow-none">
                             <i data-lucide="mail" class="w-4 h-4"></i>
                             Contact Me
                         </a>
@@ -180,10 +171,10 @@
                         </button>
                     </div>
                     <div class="flex gap-4 justify-center md:justify-start">
-                        <a href="https://github.com/rasyidred" target="_blank" rel="noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                        <a href="" target="_blank" rel="noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                             <i data-lucide="github" class="w-6 h-6"></i>
                         </a>
-                        <a href="https://linkedin.com/in/rasyidred" target="_blank" rel="noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
+                        <a href="" target="_blank" rel="noreferrer" class="text-gray-500 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">
                             <i data-lucide="linkedin" class="w-6 h-6"></i>
                         </a>
                     </div>
@@ -201,135 +192,8 @@
                     <h2 class="text-3xl font-bold text-gray-900 dark:text-white">Experience</h2>
                 </div>
 
+                <!-- Experience items populated by data-loader.js -->
                 <div class="relative border-l-2 border-primary-100 dark:border-slate-700 ml-4 md:ml-6 space-y-12">
-                    
-                    <!-- Item 1: NSLab -->
-                    <div class="relative pl-8 md:pl-12">
-                        <div class="timeline-dot"></div>
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Research & Development Engineer</h3>
-                            <span class="text-sm font-medium text-primary-500 dark:text-primary-400 whitespace-nowrap mt-1 sm:mt-0 px-3 py-1 bg-primary-50 dark:bg-slate-800 rounded-full">Sep. 2023 - Present</span>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-gray-700 dark:text-gray-300 font-semibold text-lg">NSLab Inc.</p>
-                            <p class="text-gray-500 dark:text-gray-400 text-sm">Gumi, S.Korea</p>
-                        </div>
-                        <ul class="space-y-2">
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Develop and deploy 10+ Solidity smart contracts for decentralized systems supporting ETH and ERC-20 tokens</li>
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Create comprehensive security testing suite using Foundry fuzz and invariant testing, preventing reentrancy, double-spending, and DoS attacks with 97% coverage</li>
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Optimize smart contract gas usage, reducing transaction costs by up to 25%</li>
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Develop and test decentralized applications (DApps) using Flutter, ensuring seamless user interaction with blockchain networks</li>
-                        </ul>
-                    </div>
-
-                    <!-- Item 2: Graduate Research (Consolidated) -->
-                    <div class="relative pl-8 md:pl-12">
-                        <div class="timeline-dot"></div>
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Graduate Researcher</h3>
-                            <span class="text-sm font-medium text-primary-500 dark:text-primary-400 whitespace-nowrap mt-1 sm:mt-0 px-3 py-1 bg-primary-50 dark:bg-slate-800 rounded-full">Sep. 2021 - Aug. 2023</span>
-                        </div>
-                        <div class="mb-8">
-                            <p class="text-gray-700 dark:text-gray-300 font-semibold text-lg">Networked System Lab.</p>
-                            <p class="text-gray-500 dark:text-gray-400 text-sm">Gumi, S.Korea</p>
-                        </div>
-                        
-                        <!-- Projects Container -->
-                        <div class="space-y-6">
-                            
-                            <!-- Project 1 -->
-                            <div class="bg-gray-50 dark:bg-slate-800/50 p-5 rounded-lg border border-gray-100 dark:border-slate-700/50 hover:border-primary-100 dark:hover:border-primary-900/30 transition-colors">
-                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-3 gap-1">
-                                    <h4 class="font-bold text-gray-800 dark:text-gray-100">Cryptocurrency Offline Transaction Protocol</h4>
-                                    <span class="text-xs text-gray-500 dark:text-gray-400 font-mono bg-white dark:bg-slate-700 px-2 py-0.5 rounded border border-gray-100 dark:border-slate-600">Apr. 2022 - Aug. 2023</span>
-                                </div>
-                                <ul class="space-y-2">
-                                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Developed and deployed smart contracts facilitating offline-to-offline and offline-to-online transaction synchronization</li>
-                                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Built mobile application prototype demonstrating offline transaction protocol functionality with seamless blockchain integration</li>
-                                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Integrated offline wallet prototype with blockchain networks through mobile app interface for automated data reconciliation</li>
-                                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Conducted performance testing under simulated offline conditions, achieving 98% success rate for transaction validation</li>
-                                </ul>
-                            </div>
-
-                            <!-- Project 2 -->
-                            <div class="bg-gray-50 dark:bg-slate-800/50 p-5 rounded-lg border border-gray-100 dark:border-slate-700/50 hover:border-primary-100 dark:hover:border-primary-900/30 transition-colors">
-                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-3 gap-1">
-                                    <h4 class="font-bold text-gray-800 dark:text-gray-100">NFT-Based Wine Marketplace (Winex)</h4>
-                                    <span class="text-xs text-gray-500 dark:text-gray-400 font-mono bg-white dark:bg-slate-700 px-2 py-0.5 rounded border border-gray-100 dark:border-slate-600">Jan. 2022 - Apr. 2022</span>
-                                </div>
-                                <ul class="space-y-2">
-                                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Developed NFT-based wine marketplace smart contracts enabling secure product authentication and supply chain tracking</li>
-                                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Performed comprehensive smart contract security audits using Slither static analysis and manual code review</li>
-                                </ul>
-                            </div>
-
-                            <!-- Project 3 -->
-                            <div class="bg-gray-50 dark:bg-slate-800/50 p-5 rounded-lg border border-gray-100 dark:border-slate-700/50 hover:border-primary-100 dark:hover:border-primary-900/30 transition-colors">
-                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-3 gap-1">
-                                    <h4 class="font-bold text-gray-800 dark:text-gray-100">3D Printing Quality Monitoring System</h4>
-                                    <span class="text-xs text-gray-500 dark:text-gray-400 font-mono bg-white dark:bg-slate-700 px-2 py-0.5 rounded border border-gray-100 dark:border-slate-600">Sep. 2021 - Dec. 2021</span>
-                                </div>
-                                <ul class="space-y-2">
-                                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Built real-time quality monitoring system using machine learning algorithms and IoT sensor integration</li>
-                                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Developed Python-based sensor interface with Raspberry Pi for automated data collection and processing</li>
-                                    <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Implemented MongoDB database system for real-time sensor data storage and retrieval</li>
-                                </ul>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <!-- Item 3: Audio Watermarking -->
-                    <div class="relative pl-8 md:pl-12">
-                        <div class="timeline-dot"></div>
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Audio Watermarking Implementation</h3>
-                            <span class="text-sm font-medium text-primary-500 dark:text-primary-400 whitespace-nowrap mt-1 sm:mt-0 px-3 py-1 bg-primary-50 dark:bg-slate-800 rounded-full">Jan. 2019 - Dec. 2019</span>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-gray-700 dark:text-gray-300 font-semibold text-lg">Digital Signal Processing Lab. (Undergraduate Research)</p>
-                            <p class="text-gray-500 dark:text-gray-400 text-sm">Bandung, Indonesia</p>
-                        </div>
-                        <ul class="space-y-2">
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Implemented portable audio watermarking system on Raspberry Pi platform for digital file authentication</li>
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Developed and optimized Python-based signal processing algorithms minimizing audio distortion during watermark embedding</li>
-                        </ul>
-                    </div>
-
-                    <!-- Item 4: QA Intern -->
-                    <div class="relative pl-8 md:pl-12">
-                        <div class="timeline-dot"></div>
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Quality Assurance Intern</h3>
-                            <span class="text-sm font-medium text-primary-500 dark:text-primary-400 whitespace-nowrap mt-1 sm:mt-0 px-3 py-1 bg-primary-50 dark:bg-slate-800 rounded-full">Jun. - Aug. 2019</span>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-gray-700 dark:text-gray-300 font-semibold text-lg">PT Telkom Witel Kalsel</p>
-                            <p class="text-gray-500 dark:text-gray-400 text-sm">Banjarmasin, Indonesia</p>
-                        </div>
-                        <ul class="space-y-2">
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Analyzed optical splitter and ODP performance data to identify network disruption risks and optimization opportunities</li>
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Prepared comprehensive budget proposals and investment memorandums for strategic partner infrastructure projects</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Item 5: QA Intern -->
-                     <div class="relative pl-8 md:pl-12">
-                        <div class="timeline-dot"></div>
-                        <div class="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
-                            <h3 class="text-xl font-bold text-gray-900 dark:text-white">Quality Assurance Intern</h3>
-                            <span class="text-sm font-medium text-primary-500 dark:text-primary-400 whitespace-nowrap mt-1 sm:mt-0 px-3 py-1 bg-primary-50 dark:bg-slate-800 rounded-full">Jun. - Aug. 2018</span>
-                        </div>
-                        <div class="mb-4">
-                            <p class="text-gray-700 dark:text-gray-300 font-semibold text-lg">PT Telkom Witel Kalsel</p>
-                            <p class="text-gray-500 dark:text-gray-400 text-sm">Banjarmasin, Indonesia</p>
-                        </div>
-                        <ul class="space-y-2">
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Performed quality assurance testing and validation for new optical access network ODP installations</li>
-                            <li class="text-gray-600 dark:text-gray-400 leading-relaxed text-sm md:text-base flex items-start gap-2"><span class="text-primary-400 mt-1.5 text-xs">●</span>Tracked project timelines, milestones, and deliverables for multiple company partner initiatives</li>
-                        </ul>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -339,7 +203,7 @@
             <div class="max-w-6xl mx-auto px-4">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-                    <!-- Left Col: Education -->
+                    <!-- Left Col: Education (Populated by data-loader.js) -->
                     <div>
                         <div class="flex items-center gap-3 mb-8">
                             <div class="p-3 bg-primary-100 dark:bg-slate-800 rounded-xl text-primary-600 dark:text-primary-400">
@@ -348,34 +212,11 @@
                             <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Education</h2>
                         </div>
                         <div class="space-y-6">
-                            <div class="pl-4 border-l-2 border-primary-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 cursor-pointer hover:pl-6">
-                                <h3 class="font-bold text-gray-900 dark:text-white text-lg">Kumoh National Institute of Technology</h3>
-                                <p class="text-primary-600 dark:text-primary-400 font-medium text-sm mb-1">Master of Engineering in IT Convergence Engineering</p>
-                                <div class="flex justify-between text-sm text-gray-500 dark:text-gray-400 mb-2">
-                                    <span>Sep. 2021 - Aug. 2023</span>
-                                    <span>Gumi, S.Korea</span>
-                                </div>
-                                <div class="bg-white dark:bg-slate-800 p-3 rounded-lg text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-100 dark:border-slate-700">
-                                    <p><span class="font-semibold text-gray-900 dark:text-gray-100">GPA:</span> 4.38/4.50</p>
-                                    <p class="mt-1"><span class="font-semibold text-gray-900 dark:text-gray-100">Thesis:</span> HADES: Hash-Based Audio Copy Detection System for Copyright Protection in Decentralized Music Sharing</p>
-                                </div>
-                            </div>
-                            <div class="pl-4 border-l-2 border-primary-200 dark:border-slate-700 hover:border-primary-500 dark:hover:border-primary-500 transition-all duration-300 cursor-pointer hover:pl-6">
-                                <h3 class="font-bold text-gray-900 dark:text-white text-lg">Telkom University</h3>
-                                <p class="text-primary-600 dark:text-primary-400 font-medium text-sm mb-1">Bachelor of Engineering in Telecommunication Engineering</p>
-                                <div class="flex justify-between text-sm text-gray-500 dark:text-gray-400 mb-2">
-                                    <span>Aug. 2016 - Feb. 2020</span>
-                                    <span>Bandung, Indonesia</span>
-                                </div>
-                                <div class="bg-white dark:bg-slate-800 p-3 rounded-lg text-sm text-gray-700 dark:text-gray-300 shadow-sm border border-gray-100 dark:border-slate-700">
-                                    <p><span class="font-semibold text-gray-900 dark:text-gray-100">GPA:</span> 3.91/4.00 (with Honors of Cum Laude)</p>
-                                    <p class="mt-1"><span class="font-semibold text-gray-900 dark:text-gray-100">Thesis:</span> Audio Watermarking Implementation on Raspberry Pi Based on DWT Using SMM</p>
-                                </div>
-                            </div>
+                            <!-- Education items populated by data-loader.js -->
                         </div>
                     </div>
 
-                    <!-- Right Col: Awards -->
+                    <!-- Right Col: Awards (Populated by data-loader.js) -->
                     <div>
                         <div class="flex items-center gap-3 mb-8">
                             <div class="p-3 bg-primary-100 dark:bg-primary-900/30 rounded-xl text-primary-600 dark:text-primary-400">
@@ -383,12 +224,8 @@
                             </div>
                             <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Awards</h2>
                         </div>
-                        <div class="bg-transparent border border-gray-200 dark:border-slate-700 p-4 rounded-xl flex items-center justify-between hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-md transition-all duration-300 cursor-pointer">
-                            <div>
-                                <h4 class="font-bold text-gray-900 dark:text-white">Global Korea Scholarship awardee</h4>
-                                <p class="text-sm text-gray-600 dark:text-gray-400">Korean Government</p>
-                            </div>
-                            <span class="text-primary-600 dark:text-primary-400 font-bold bg-white dark:bg-slate-700 px-3 py-1 rounded-full shadow-sm text-sm">2020</span>
+                        <div class="space-y-3">
+                            <!-- Awards items populated by data-loader.js -->
                         </div>
                     </div>
                 </div>
@@ -402,90 +239,11 @@
                     <div class="p-3 bg-primary-100 dark:bg-slate-800 rounded-xl text-primary-600 dark:text-primary-400">
                         <i data-lucide="cpu" class="w-6 h-6"></i>
                     </div>
-                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Technical Skills</h2>
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Skills</h2>
                 </div>
 
+                <!-- Skills and certifications populated by data-loader.js -->
                 <div class="grid gap-6">
-                    <!-- Programming -->
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Programming</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Solidity</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Circom</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Flutter</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Javascript</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Python</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">SQL</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Matlab</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">LaTeX</span>
-                        </div>
-                    </div>
-
-                    <!-- Blockchain Tools -->
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Blockchain Tools</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Foundry</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Hardhat</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Slither</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Aderyn</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">SnarkJS</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Etherscan</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Remix IDE</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Go Ethereum</span>
-                        </div>
-                    </div>
-
-                    <!-- Development -->
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Development</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Git</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">MongoDB</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">RESTful APIs</span>
-                        </div>
-                    </div>
-
-                    <!-- Languages -->
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Languages</h3>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">English</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Korean</span>
-                            <span class="px-4 py-2 bg-white dark:bg-slate-800 border border-gray-100 dark:border-slate-700 text-gray-700 dark:text-gray-300 rounded-lg text-sm font-medium hover:bg-primary-50 dark:hover:bg-slate-700 hover:text-primary-700 dark:hover:text-primary-400 hover:border-primary-100 dark:hover:border-primary-900/50 transition-colors cursor-default">Indonesian</span>
-                        </div>
-                    </div>
-
-                    <!-- Certifications -->
-                    <div>
-                        <h3 class="text-sm font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest mb-3">Certifications</h3>
-                        <div class="space-y-3">
-                            <a href="/certificates/Udemy_Solidity_Bootcamp.pdf" target="_blank" rel="noopener noreferrer"
-                               class="bg-transparent border border-gray-200 dark:border-slate-700 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-md transition-all duration-300 flex items-center justify-between group no-underline">
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white text-sm group-hover:text-primary-700 dark:group-hover:text-primary-400 transition-colors">Ethereum Blockchain Developer Bootcamp with Solidity</h4>
-                                    <p class="text-xs text-gray-600 dark:text-gray-400">Udemy</p>
-                                </div>
-                                <span class="text-primary-600 dark:text-primary-400 font-bold bg-white dark:bg-slate-700 px-3 py-1 rounded-full shadow-sm text-xs">2021</span>
-                            </a>
-                            <a href="/certificates/Palo_Alto_Cybersecurity_Infrastructure.pdf" target="_blank" rel="noopener noreferrer"
-                               class="bg-transparent border border-gray-200 dark:border-slate-700 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-md transition-all duration-300 flex items-center justify-between group no-underline">
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white text-sm group-hover:text-primary-700 dark:group-hover:text-primary-400 transition-colors">Cybersecurity Instructure Configuration</h4>
-                                    <p class="text-xs text-gray-600 dark:text-gray-400">Palo Alto Networks</p>
-                                </div>
-                                <span class="text-primary-600 dark:text-primary-400 font-bold bg-white dark:bg-slate-700 px-3 py-1 rounded-full shadow-sm text-xs">2020</span>
-                            </a>
-                            <a href="/certificates/III_Cybersecurity_Infrastructure.pdf" target="_blank" rel="noopener noreferrer"
-                               class="bg-transparent border border-gray-200 dark:border-slate-700 p-4 rounded-xl hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-md transition-all duration-300 flex items-center justify-between group no-underline">
-                                <div>
-                                    <h4 class="font-bold text-gray-900 dark:text-white text-sm group-hover:text-primary-700 dark:group-hover:text-primary-400 transition-colors">Cybersecurity Overview</h4>
-                                    <p class="text-xs text-gray-600 dark:text-gray-400">Institute For Information Industry, Taiwan</p>
-                                </div>
-                                <span class="text-primary-600 dark:text-primary-400 font-bold bg-white dark:bg-slate-700 px-3 py-1 rounded-full shadow-sm text-xs">2020</span>
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -509,270 +267,8 @@
                     </div>
                 </div>
 
+                <!-- Publications populated by data-loader.js -->
                 <div class="space-y-4" id="papers-list">
-                    <!-- Journal Papers -->
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Journal">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border-blue-100 dark:border-blue-900/50">Journal</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2025</span>
-                            <span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 px-2 py-0.5 rounded-full font-medium">Submitted</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">PureRx: An NFT-Prescription Management for Efficient and Secure Healthcare System</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Haryadi, G.A., Allwinnaldo, <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M.R.R.</span>, Lee, J.M., Kim, D.-S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">IEEE Transactions on Big Data. 3rd Revision Submitted</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Journal" data-featured="true">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border-blue-100 dark:border-blue-900/50">Journal</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2024</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Pure Loyalty: Efficient and Secure Framework for NFT Loyalty Programs</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Haryadi, G.A., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M.R.R.</span>, Lee, J.M., Kim, D.-S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Journal of Korean Institute of Communications and Information Sciences. 49(7), 983-992</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Journal" data-featured="true">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border-blue-100 dark:border-blue-900/50">Journal</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">HADES: Hash-Based Audio Copy Detection System for Copyright Protection in Decentralized Music Sharing</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic"><span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Allwinnaldo, Alief, R. N., Igboanusi, I. S., Lee, J. M., Kim, D.-S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">IEEE Transactions on Network and Service Management, 20(3), 2845-2853</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Journal" data-featured="true">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border-blue-100 dark:border-blue-900/50">Journal</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Efficient Blockchain-Based Energy Auction Platform for Secured Energy Trading on Industrial Applications</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Allwinnaldo, <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Alief, R. N., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Journal of Korean Institute of Communications and Information Sciences, 48(7), 885-895</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Journal" data-featured="true">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 border-blue-100 dark:border-blue-900/50">Journal</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Smart Auto Mining (SAM) for Industrial IoT Blockchain Network</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Igboanusi, I.S., Allwinnaldo, Alief, R.N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M.R.R.</span>, Lee, J.-M., Kim, D.-S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">IET Communication, 16, 2123–2132</p>
-                    </div>
-
-                    <!-- Conference Papers -->
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2024</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Blockchain-Enabled Secured Land Transaction Framework using Smart Contract</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Nwankwo, O. U., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1886-1887</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Analysis on Efficient Batch NFT-Based System for Electronic Manufacturing Supply Chain</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Haryadi, G. A., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Alief, R. N., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 871-872</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Efficient Voucher Distribution and Non-Transferability in NFT Loyalty Programs</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Haryadi, G. A., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 858-859</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Batch Minting-enabled Digital Certificates Based on Soulbound Token for Achievement Verification</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic"><span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Alief, R. N., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1350-1351</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Advance NFT-Based Digital Certificate for Efficient Exotic Fish Ownership</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Allwinnaldo, <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Alief, R. N., Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1352-1354</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Saviour Multi-Hashing (SMuHa): A Security Algorithm for Offline Transactions</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Igboanusi, I. S., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Alief, R. N., Allwinnaldo, Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 288-289</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Watermarking-Based Fake Audio NFT Detection in NFT Marketplace</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic"><span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Alief, R. N., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 487-488</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2023</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Blockchain-Based Lightweight Fish Auction Marketplace Platform for Traceability Seafood Supply Chain</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Allwinnaldo, Alief, R. N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 718-720</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Non-transferable NFT-Based Digital Certificate for Achievement Verification</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic"><span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Alief, R. N., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 678-679</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Lightweight Energy Auction Smart Contract for Industrial Application</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Allwinnaldo, Alief, R. N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 684-687</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Pure Voting (PV): An Offline Voting Algorithm</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Igboanusi, I. S., Alief, R. N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Allwinnaldo, Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">In 2022 27th Asia Pacific Conference on Communications (APCC), Jeju Island, Republic of Korea, 586-587</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Ethereum Based Storage Aware Mining for Permissioned Blockchain Network</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Igboanusi, I. S., Allwinnaldo, R. N. Alief, <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">In 2022 Thirteenth International Conference on Ubiquitous and Future Networks (ICUFN), Barcelona, Spain, 161-166</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Genuine-assurance Scheme for Digital Assets Validation using Blockchain Technology</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic"><span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Alief, R. N., Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1439-1440</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Smart Contract-Based Solution for Secured Supply Chain Transaction</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Allwinnaldo, Alief, R. N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1441-1443</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Smart Contract-Based Airline Ticket Reservation System</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Alief, R. N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1435-1436</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Storage-Aware Mining for Blockchain Network</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Igboanusi, I. S., Allwinnaldo, I. S., Alief, R. N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1125-1126</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Duplicate Audio Data Detection Model Based on IPFS and Blockchain using Smart Contract</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic"><span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Alief, R. N., Allwinnaldo, Igbonausi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1028-1029</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Lightweight Project Bidding Smart Contract for Industial Sector on Ethereum Blockchain</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Allwinnaldo, Alief, R. N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1032-1035</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2022</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">Smart Contract-Based Payment and Luggage Tracking for Airline Industry</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Alief, R. N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Allwinnaldo, Igboanusi, I. S., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 1024-1025</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2021</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">A Robust MP3 Compression-Resistant Audio Watermarking Algorithm Based on DWT-SMM</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic"><span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span>, Ajakwe, S. O., Lee, J. M., Kim, D. S.</p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">The Korean Institutes of Communications and Information Sciences (KICS), 393-394</p>
-                    </div>
-
-                    <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group" data-category="Conference">
-                        <div class="flex items-center gap-2 mb-2">
-                            <span class="text-xs font-bold uppercase tracking-wider px-2 py-0.5 rounded border bg-orange-50 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 border-orange-100 dark:border-orange-900/50">Conference</span>
-                            <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">2019</span>
-                        </div>
-                        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">QIM-based Audio Watermarking using Polar-based Singular Value in DCT Domain</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">Allwinnaldo, Budiman, G., Novamizanti, L., Alief, R. N., <span class="font-bold text-gray-900 dark:text-gray-200 underline decoration-primary-300 decoration-2 underline-offset-2">Ansori, M. R. R.</span></p>
-                        <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">International Conference on Information Technology, Information Systems and Electrical Engineering (ICITISEE), 216-221</p>
-                    </div>
-
                 </div>
             </div>
         </section>
@@ -786,6 +282,9 @@
             </div>
         </footer>
     </main>
+
+    <!-- Data Loader Module -->
+    <script type="module" src="./data-loader.js"></script>
 
     <!-- CV Generator Module -->
     <script type="module" src="./cv-generator.js"></script>
@@ -855,6 +354,57 @@
                     localStorage.setItem('color-theme', 'dark');
                 }
             }
+        });
+
+        // Active Section Highlighting (Scroll Spy)
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Function to update active navigation link
+        function updateActiveNav(sectionId) {
+            // Remove active classes from all nav links
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary-600', 'dark:text-primary-400');
+                link.classList.add('text-gray-600', 'dark:text-gray-300');
+            });
+
+            // Add active classes to the current section's nav link
+            const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+            if (activeLink) {
+                activeLink.classList.remove('text-gray-600', 'dark:text-gray-300');
+                activeLink.classList.add('text-primary-600', 'dark:text-primary-400');
+            }
+        }
+
+        // Set About as active on page load
+        updateActiveNav('about');
+
+        // Scroll spy function
+        function handleScrollSpy() {
+            const scrollPosition = window.scrollY + 100; // Add offset for header
+
+            // Find which section we're currently in
+            let currentSection = 'about'; // Default to about
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    currentSection = section.id;
+                }
+            });
+
+            updateActiveNav(currentSection);
+        }
+
+        // Throttle scroll events for better performance
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            scrollTimeout = setTimeout(handleScrollSpy, 10);
         });
 
         // Publications Filter
