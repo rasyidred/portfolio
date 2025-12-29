@@ -190,6 +190,11 @@ function populatePublications() {
     // Status badge for submitted papers
     const statusBadge = paper.status ? `<span class="text-xs bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 px-2 py-0.5 rounded-full font-medium">${paper.status}</span>` : '';
 
+    // Create clickable title if DOI/link exists
+    const titleElement = paper.doi
+      ? `<a href="${paper.doi}" target="_blank" rel="noopener noreferrer" class="text-lg font-bold text-gray-900 dark:text-white mb-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors hover:underline cursor-pointer block">${paper.title}</a>`
+      : `<h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2">${paper.title}</h3>`;
+
     return `
       <div class="paper-item bg-white dark:bg-slate-800 p-6 rounded-xl shadow-sm border border-gray-100 dark:border-slate-700 hover:shadow-md transition-shadow group"
            data-category="${paper.type}" ${isFeatured}>
@@ -198,7 +203,7 @@ function populatePublications() {
           <span class="text-sm text-gray-500 dark:text-gray-400 font-mono">${paper.year}</span>
           ${statusBadge}
         </div>
-        <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">${paper.title}</h3>
+        ${titleElement}
         <p class="text-gray-600 dark:text-gray-400 text-sm mb-3 italic">${highlightedAuthors}</p>
         <p class="text-gray-500 dark:text-gray-500 text-sm border-t border-gray-100 dark:border-slate-700 pt-2 mt-2">${paper.publication}</p>
       </div>

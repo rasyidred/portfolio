@@ -189,6 +189,7 @@ export const cvData = {
       publication: "IEEE Transactions on Big Data. 3rd Revision Submitted",
       status: "Submitted",
       featured: false,
+      doi: null,
     },
     {
       type: "Journal",
@@ -199,6 +200,7 @@ export const cvData = {
       publication:
         "The Journal of Korean Institute of Communications and Information Sciences. 49(7), 983-992",
       featured: true,
+      doi: "https://doi.org/10.7840/kics.2024.49.7.983",
     },
     {
       type: "Journal",
@@ -210,6 +212,7 @@ export const cvData = {
       publication:
         "IEEE Transactions on Network and Service Management, 20(3), 2845-2853",
       featured: true,
+      doi: "https://doi.org/10.1109/TNSM.2023.3241610",
     },
     {
       type: "Journal",
@@ -221,6 +224,7 @@ export const cvData = {
       publication:
         "The Journal of Korean Institute of Communications and Information Sciences, 48(7), 885-895",
       featured: true,
+      doi: "https://doi.org/10.7840/kics.2023.48.7.885",
     },
     {
       type: "Journal",
@@ -230,6 +234,7 @@ export const cvData = {
       title: "Smart Auto Mining (SAM) for Industrial IoT Blockchain Network",
       publication: "IET Communication, 16, 2123–2132",
       featured: true,
+      doi: "https://doi.org/10.1049/cmu2.12465",
     },
     {
       type: "Conference",
@@ -240,6 +245,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1886-1887",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Blockchain-Enabled%20Secured%20Land%20Transaction%20Framework%20using%20Smart%20Contract",
     },
     {
       type: "Conference",
@@ -251,6 +257,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 871-872",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Analysis%20on%20Efficient%20Batch%20NFT-Based%20System%20for%20Electronic%20Manufacturing%20Supply%20Chain",
     },
     {
       type: "Conference",
@@ -261,6 +268,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 858-859",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Efficient%20Voucher%20Distribution%20and%20Non-Transferability%20in%20NFT%20Loyalty%20Programs",
     },
     {
       type: "Conference",
@@ -272,6 +280,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1350-1351",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Batch%20Minting-enabled%20Digital%20Certificates%20Based%20on%20Soulbound%20Token",
     },
     {
       type: "Conference",
@@ -283,6 +292,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1352-1354",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Advance%20NFT-Based%20Digital%20Certificate%20for%20Efficient%20Exotic%20Fish%20Ownership",
     },
     {
       type: "Conference",
@@ -294,6 +304,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 288-289",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Saviour%20Multi-Hashing%20(SMuHa)",
     },
     {
       type: "Conference",
@@ -304,6 +315,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 487-488",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Watermarking-Based%20Fake%20Audio%20NFT%20Detection%20in%20NFT%20Marketplace",
     },
     {
       type: "Conference",
@@ -315,6 +327,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 718-720",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Blockchain-Based%20Lightweight%20Fish%20Auction%20Marketplace%20Platform",
     },
     {
       type: "Conference",
@@ -326,6 +339,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 678-679",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Non-transferable%20NFT-Based%20Digital%20Certificate%20for%20Achievement%20Verification",
     },
     {
       type: "Conference",
@@ -337,6 +351,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 684-687",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Lightweight%20Energy%20Auction%20Smart%20Contract%20for%20Industrial%20Application",
     },
     {
       type: "Conference",
@@ -347,6 +362,7 @@ export const cvData = {
       publication:
         "In 2022 27th Asia Pacific Conference on Communications (APCC), Jeju Island, Republic of Korea, 586-587",
       featured: false,
+      doi: "https://ieeexplore.ieee.org/search/searchresult.jsp?newsearch=true&queryText=Pure%20Voting%20(PV):%20An%20Offline%20Voting%20Algorithm",
     },
     {
       type: "Conference",
@@ -358,6 +374,7 @@ export const cvData = {
       publication:
         "In 2022 Thirteenth International Conference on Ubiquitous and Future Networks (ICUFN), Barcelona, Spain, 161-166",
       featured: false,
+      doi: "https://doi.org/10.1109/ICUFN55119.2022.9829669",
     },
     {
       type: "Conference",
@@ -369,6 +386,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1439-1440",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Genuine-assurance%20Scheme%20for%20Digital%20Assets%20Validation",
     },
     {
       type: "Conference",
@@ -380,6 +398,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1441-1443",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Smart%20Contract-Based%20Solution%20for%20Secured%20Supply%20Chain%20Transaction",
     },
     {
       type: "Conference",
@@ -390,6 +409,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1435-1436",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Smart%20Contract-Based%20Airline%20Ticket%20Reservation%20System",
     },
     {
       type: "Conference",
@@ -400,6 +420,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1125-1126",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Storage-Aware%20Mining%20for%20Blockchain%20Network",
     },
     {
       type: "Conference",
@@ -411,6 +432,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1028-1029",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Duplicate%20Audio%20Data%20Detection%20Model%20Based%20on%20IPFS",
     },
     {
       type: "Conference",
@@ -422,6 +444,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1032-1035",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Lightweight%20Project%20Bidding%20Smart%20Contract",
     },
     {
       type: "Conference",
@@ -433,6 +456,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 1024-1025",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=Smart%20Contract-Based%20Payment%20and%20Luggage%20Tracking",
     },
     {
       type: "Conference",
@@ -443,6 +467,7 @@ export const cvData = {
       publication:
         "The Korean Institutes of Communications and Information Sciences (KICS), 393-394",
       featured: false,
+      doi: "https://www.dbpia.co.kr/search/topSearch?searchOption=all&query=A%20Robust%20MP3%20Compression-Resistant%20Audio%20Watermarking",
     },
     {
       type: "Conference",
@@ -454,6 +479,7 @@ export const cvData = {
       publication:
         "International Conference on Information Technology, Information Systems and Electrical Engineering (ICITISEE), 216-221",
       featured: false,
+      doi: "https://doi.org/10.1109/ICITISEE48480.2019.9003921",
     },
   ],
 };

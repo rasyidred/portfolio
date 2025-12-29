@@ -97,12 +97,11 @@
             <div class="flex items-center gap-6">
                 <!-- Desktop Nav -->
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">About</a>
-                    <a href="#experience" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Experience</a>
-                    <a href="#education" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Education</a>
-                    <a href="#skills" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Skills</a>
-                    <a href="#publications" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Publications</a>
-                    <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Contact</a>
+                    <a href="#about" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">About</a>
+                    <a href="#experience" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Experience</a>
+                    <a href="#education" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Education</a>
+                    <a href="#skills" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Skills</a>
+                    <a href="#publications" class="nav-link text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 font-medium transition-colors text-sm uppercase tracking-wider">Publications</a>
                 </nav>
 
                 <!-- Dark Mode Toggle -->
@@ -121,12 +120,11 @@
         <!-- Mobile Nav -->
         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 right-0 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-gray-100 dark:border-slate-800 shadow-lg">
             <nav class="flex flex-col py-4 px-4 space-y-4">
-                <a href="#about" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">About</a>
-                <a href="#experience" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Experience</a>
-                <a href="#education" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Education</a>
-                <a href="#skills" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Skills</a>
-                <a href="#publications" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Publications</a>
-                <a href="#contact" class="mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Contact</a>
+                <a href="#about" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">About</a>
+                <a href="#experience" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Experience</a>
+                <a href="#education" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Education</a>
+                <a href="#skills" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Skills</a>
+                <a href="#publications" class="nav-link mobile-link text-gray-700 dark:text-gray-200 hover:text-primary-600 dark:hover:text-primary-400 font-medium block py-2">Publications</a>
             </nav>
         </div>
     </header>
@@ -356,6 +354,57 @@
                     localStorage.setItem('color-theme', 'dark');
                 }
             }
+        });
+
+        // Active Section Highlighting (Scroll Spy)
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Function to update active navigation link
+        function updateActiveNav(sectionId) {
+            // Remove active classes from all nav links
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary-600', 'dark:text-primary-400');
+                link.classList.add('text-gray-600', 'dark:text-gray-300');
+            });
+
+            // Add active classes to the current section's nav link
+            const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+            if (activeLink) {
+                activeLink.classList.remove('text-gray-600', 'dark:text-gray-300');
+                activeLink.classList.add('text-primary-600', 'dark:text-primary-400');
+            }
+        }
+
+        // Set About as active on page load
+        updateActiveNav('about');
+
+        // Scroll spy function
+        function handleScrollSpy() {
+            const scrollPosition = window.scrollY + 100; // Add offset for header
+
+            // Find which section we're currently in
+            let currentSection = 'about'; // Default to about
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    currentSection = section.id;
+                }
+            });
+
+            updateActiveNav(currentSection);
+        }
+
+        // Throttle scroll events for better performance
+        let scrollTimeout;
+        window.addEventListener('scroll', () => {
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            scrollTimeout = setTimeout(handleScrollSpy, 10);
         });
 
         // Publications Filter
