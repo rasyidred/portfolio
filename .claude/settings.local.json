@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx http-server -p 8001 -o)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

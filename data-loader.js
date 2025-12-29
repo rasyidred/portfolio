@@ -110,7 +110,7 @@ function populateEducation() {
   // Populate Awards (right column) - find by searching for the awards section
   const awardsSection = Array.from(document.querySelectorAll('#education h2')).find(h2 => h2.textContent === 'Awards');
   if (awardsSection) {
-    const awardsContainer = awardsSection.closest('div').querySelector('div[class*="bg-transparent"]').parentElement;
+    const awardsContainer = awardsSection.parentElement.nextElementSibling;
     if (awardsContainer) {
       awardsContainer.innerHTML = cvData.awards.map(award => `
         <div class="bg-transparent border border-gray-200 dark:border-slate-700 p-4 rounded-xl flex items-center justify-between hover:bg-primary-50 dark:hover:bg-primary-900/20 hover:border-primary-300 dark:hover:border-primary-700 hover:shadow-md transition-all duration-300 cursor-pointer">
@@ -207,6 +207,60 @@ function populatePublications() {
 }
 
 /**
+ * Applies filter to papers
+ */
+function applyFilter(filter, filterButtons) {
+  const paperItems = document.querySelectorAll('.paper-item');
+
+  // Update active button styling
+  filterButtons.forEach(btn => {
+    const isActive = btn.getAttribute('data-filter') === filter;
+    if (isActive) {
+      btn.classList.add('bg-primary-600', 'text-white', 'shadow-md');
+      btn.classList.remove('text-gray-600', 'dark:text-gray-300', 'hover:bg-gray-200', 'dark:hover:bg-slate-700');
+    } else {
+      btn.classList.remove('bg-primary-600', 'text-white', 'shadow-md');
+      btn.classList.add('text-gray-600', 'dark:text-gray-300', 'hover:bg-gray-200', 'dark:hover:bg-slate-700');
+    }
+  });
+
+  // Filter papers
+  paperItems.forEach(paper => {
+    const category = paper.getAttribute('data-category');
+    const isFeatured = paper.getAttribute('data-featured') === 'true';
+
+    let shouldShow = false;
+
+    if (filter === 'All') {
+      shouldShow = true;
+    } else if (filter === 'Featured') {
+      shouldShow = isFeatured;
+    } else if (filter === 'Journal' || filter === 'Conference') {
+      shouldShow = category === filter;
+    }
+
+    paper.style.display = shouldShow ? 'block' : 'none';
+  });
+}
+
+/**
+ * Sets up publication filter buttons
+ */
+function setupPublicationFilters() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      applyFilter(filter, filterButtons);
+    });
+  });
+
+  // Apply Featured filter by default on page load
+  applyFilter('Featured', filterButtons);
+}
+
+/**
  * Initialize all sections
  */
 function initializePortfolio() {
@@ -215,6 +269,7 @@ function initializePortfolio() {
   populateEducation();
   populateSkills();
   populatePublications();
+  setupPublicationFilters();
 
   // Reinitialize Lucide icons after populating content
   if (typeof lucide !== 'undefined') {
