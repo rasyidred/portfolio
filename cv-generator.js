@@ -1,9 +1,3 @@
-/**
- * Generates an ATS-friendly PDF CV using pdfmake
- * This script is loaded as a module and makes generateCV available globally
- */
-
-// Import CV data from constants module
 import { cvData } from './constants.js';
 
 console.log('CV Generator module loading...');
@@ -118,25 +112,60 @@ function generateCV() {
         text: 'PROFESSIONAL EXPERIENCE',
         style: 'sectionHeader'
       },
-      ...cvData.experience.map(exp => [
-        {
-          columns: [
-            { text: exp.role, style: 'itemTitle', width: '*' },
-            { text: exp.period, style: 'period', width: 'auto' }
-          ],
-          margin: [0, 5, 0, 2]
-        },
-        {
-          text: `${exp.company}, ${exp.location}`,
-          style: 'itemSubtitle',
-          margin: [0, 0, 0, 5]
-        },
-        {
-          ul: exp.details,
-          style: 'body',
-          margin: [0, 0, 0, 10]
+      ...cvData.experience.map(exp => {
+        // Check if this entry has projects (consolidated structure)
+        if (exp.projects && exp.projects.length > 0) {
+          // Render consolidated entry with sub-projects
+          return [
+            {
+              columns: [
+                { text: exp.role, style: 'itemTitle', width: '*' },
+                { text: exp.period, style: 'period', width: 'auto' }
+              ],
+              margin: [0, 5, 0, 2]
+            },
+            {
+              text: `${exp.company}, ${exp.location}`,
+              style: 'itemSubtitle',
+              margin: [0, 0, 0, 5]
+            },
+            // Render each project
+            ...exp.projects.map(project => [
+              {
+                text: `${project.name} (${project.period})`,
+                style: 'projectTitle',
+                margin: [0, 3, 0, 2]
+              },
+              {
+                ul: project.details,
+                style: 'body',
+                margin: [0, 0, 0, 5]
+              }
+            ]).flat()
+          ];
+        } else {
+          // Render normal entry
+          return [
+            {
+              columns: [
+                { text: exp.role, style: 'itemTitle', width: '*' },
+                { text: exp.period, style: 'period', width: 'auto' }
+              ],
+              margin: [0, 5, 0, 2]
+            },
+            {
+              text: `${exp.company}, ${exp.location}`,
+              style: 'itemSubtitle',
+              margin: [0, 0, 0, 5]
+            },
+            {
+              ul: exp.details,
+              style: 'body',
+              margin: [0, 0, 0, 10]
+            }
+          ];
         }
-      ]).flat(),
+      }).flat(),
 
       // Skills section
       {
@@ -264,6 +293,11 @@ function generateCV() {
         fontSize: 10,
         italics: true,
         color: '#333333'
+      },
+      projectTitle: {
+        fontSize: 10,
+        bold: true,
+        color: '#000000'
       },
       period: {
         fontSize: 10,
