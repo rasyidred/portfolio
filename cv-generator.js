@@ -6,7 +6,26 @@
 // Import CV data from constants module
 import { cvData } from './constants.js';
 
+console.log('CV Generator module loading...');
+
 function generateCV() {
+  try {
+    // Check if pdfMake is available
+    if (typeof pdfMake === 'undefined') {
+      console.error('pdfMake library not loaded');
+      alert('PDF library not loaded. Please refresh the page.');
+      return;
+    }
+
+    // Check if cvData is available
+    if (!cvData) {
+      console.error('CV data not available');
+      alert('CV data not loaded. Please refresh the page.');
+      return;
+    }
+
+    console.log('Generating CV...');
+
   // Define document content with ATS-friendly formatting
   const docDefinition = {
     // Page settings for standard letter size
@@ -284,7 +303,35 @@ function generateCV() {
 
   // Generate and download PDF
   pdfMake.createPdf(docDefinition).download(`${cvData.name.replace(/\s+/g, '_')}_CV.pdf`);
+
+  console.log('CV generated successfully');
+  } catch (error) {
+    console.error('Error generating CV:', error);
+    alert('Error generating CV. Please check the console for details.');
+  }
 }
 
-// Make function globally available
+// Initialize CV download button
+function initCVGenerator() {
+  const cvButton = document.querySelector('button[onclick*="generateCV"]');
+  if (cvButton) {
+    console.log('CV download button found, attaching event listener');
+    // Remove inline onclick
+    cvButton.removeAttribute('onclick');
+    // Add proper event listener
+    cvButton.addEventListener('click', generateCV);
+  } else {
+    console.warn('CV download button not found');
+  }
+}
+
+// Wait for DOM before initializing
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCVGenerator);
+} else {
+  initCVGenerator();
+}
+
+// Also make function globally available as fallback
 window.generateCV = generateCV;
+console.log('CV Generator ready. window.generateCV is', typeof window.generateCV);
