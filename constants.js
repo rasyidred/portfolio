@@ -2,7 +2,7 @@
 export const cvData = {
   name: "Muhammad Rasyid Redha Ansori",
   role: "Research & Development Engineer",
-  profileImage: "/assets/profile.png",
+  profileImage: "/assets/images/profile.png",
   specialties: [
     "Blockchain",
     "Zero-Knowledge Proof",
@@ -164,20 +164,20 @@ export const cvData = {
       name: "Ethereum Blockchain Developer Bootcamp with Solidity",
       issuer: "Udemy",
       year: "2021",
-      certificateUrl: "/certificates/Udemy_Solidity_Bootcamp.pdf",
+      certificateUrl: "/assets/certificates/Udemy_Solidity_Bootcamp.pdf",
     },
     {
       name: "Cybersecurity Instructure Configuration",
       issuer: "Palo Alto Networks",
       year: "2020",
       certificateUrl:
-        "/certificates/Palo_Alto_Cybersecurity_Infrastructure.pdf",
+        "/assets/certificates/Palo_Alto_Cybersecurity_Infrastructure.pdf",
     },
     {
       name: "Cybersecurity Overview",
       issuer: "Institute For Information Industry, Taiwan",
       year: "2020",
-      certificateUrl: "/certificates/III_Cybersecurity_Infrastructure.pdf",
+      certificateUrl: "/assets/certificates/III_Cybersecurity_Infrastructure.pdf",
     },
   ],
   papers: [
